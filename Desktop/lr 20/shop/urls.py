@@ -10,8 +10,6 @@ router.register(r'products', ProductViewSet)
 router.register(r'buckets', BucketViewSet)
 router.register(r'bucket-items', BucketElemViewSet)
 
-router = DefaultRouter()
-
 urlpatterns = [
     
     path('', include(router.urls)),
